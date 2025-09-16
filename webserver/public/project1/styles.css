@@ -1,0 +1,145 @@
+/* For the falling part, disables scroll */
+html{
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+/* Setting the background and text color for the awake parts */
+.awake{ 
+    background: #000; 
+    color: white;
+}
+
+/* Changing specific elements in the first page */
+.first_page h1{
+    text-align: center;
+    font-size: 2rem;
+    margin: 100px;
+}
+
+.first_page p{ 
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+/* Changing the style of the title in the clock page */
+.clock h1{
+    text-align: center;
+    font-size: 7rem;
+    color: red;
+    margin-top: 200px;
+    z-index: 1;
+}
+
+/* Setting a common theme for multiple choices */
+.choices{
+    display: flex;
+    justify-content: space-between;
+    margin: 250px;
+    margin-top: 0px;
+    font-size: 1.3rem;
+}
+
+/* Setting the common theme for when theres only one choice */
+.one_choice{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    font-size: 1.4rem;
+}
+
+/* Colors for the dream parts */
+.dream{
+    background: rgb(0, 0, 46);
+    color: white;
+}
+
+.dream1{
+    background: rgb(0, 0, 66);
+    color: white;
+}
+
+.dream3{
+    background: rgb(0, 20, 86);
+    color: white;
+}
+
+.dream2{
+    background: rgb(30, 10, 106);
+    color: white;
+}
+
+/* Changing only some elements of the dream_entry page */
+.dream_entry h1{
+    text-align: center;
+    font-size: 2rem;
+    margin: 100px;
+}
+
+.dream_entry p{ 
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+/* Making the page bigger so we can scroll to bottom */
+.spacer{
+    height: 1000vh;
+}
+
+/* Place the bookmark at the bottom of the page */
+.bookmark {
+  position: relative;
+  height: 100vh;   /* take the whole viewport */
+  width: 100%;
+}
+
+/* Invisible clickable area covering the whole viewport */
+.fullscreen-link {
+  position: absolute;
+  inset: 0;
+  display: block;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Display no text at first, but when 
+clicked the text will be displayed in the cented */
+.dis {
+    display: None;
+}
+
+#dis:target{
+    display: block;
+    text-align: center;
+}
+
+/* Placing images in the center of the screen */
+#clock_image {
+    display: block;
+    margin: 0 auto;
+}
+
+#door_image {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+#figure {
+    display: block;
+    margin: 0 auto;
+}
+
+#figure_fight {
+    display: block;
+    margin: 100px auto;
+    margin-bottom: -200px;
+    height: 600px;
+    width: 500px;
+    clip-path: inset(0px 0px 300px 0px); /* Remove the bottom of the image */
+}
+
+.morning {
+    background: white;
+    color: black;
+}
