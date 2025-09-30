@@ -1,0 +1,68 @@
+/* Hide the overflow as I prefer to use the whole page */
+html{
+    background-color: black;
+    overflow: hidden;
+}
+
+/* Putting everything in a flex container so changing resoltion doesn't break it */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Making sure the text is under the photos */
+p {
+    color: white;
+    text-align: center;
+}
+
+/* The title above the clock */
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* This will be the clock */
+#text-body{
+    color: white;
+    margin: auto;
+    font-size: 60px;
+}
+
+/* Make sure the images are in the middle with space around them */
+#imgs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 40px;
+    cursor: pointer;
+}
+
+/* To place the text under each image */
+.img_wrapper {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  justify-content: space-between; 
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+/* Used to add the cooldown for the images */
+.disabled{
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* Make the clock blink when under 10s */
+.blink{
+    visibility: hidden;
+}
