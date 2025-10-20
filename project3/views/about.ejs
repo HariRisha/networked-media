@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="about_us">
+  <!-- Including the navigation partial -->
+  <%- include('partials/site_nav.ejs', {}) %>
+
+  <!-- Gave it common attributes class so I don't have to edit every style seperately for same attributes -->
+  <div class="common_attributes">
+    <h1>
+      About StreetPaws
+    </h1>
+
+    <div id="par_1">
+      <img src="/svrco.jpg" alt="photo of my dog" id="svrcko">
+      <p>
+        This website is dedicated to Švrćo, my dog, whose life was tragically taken by the local shelter after they threw poisoned food in my neighborhood. In his honor I decided to create a platform for other dog lovers to help dogs in need.
+      </p>
+    </div>
+
+    <div id="par_2">
+      <h2>
+        Our mission
+      </h2>
+
+      <p>
+        StreetPaws connects compassionate individuals with stray dogs in need.
+        Using an interactive map, users can:
+
+        Locate stray dogs nearby
+
+        Add new sightings with photos and details
+
+        Indicate what each dog needs — food, water, or medical care
+
+        The goal is to build a trust-based network between dog lovers, volunteers, and organizations that care about animal welfare. Even small actions, like leaving food or water, can make a real difference when they’re shared and coordinated.
+
+        This website is available to use for everyone who wants to help dogs in need and not hurt them. In addition to helping stray dogs I also aim to raise awareness about the dog shelter in my homeetown. The local shelter that should protect stray dogs instead cages them without proper food or care. Some shelter staff even throw poisoned food across the city, a horrifying and illegal act that continues without accountability.
+
+        <!-- Link currently leads to nothing but will lead to a petition once created -->
+        Please consider signing ,<a href=""> this petiton </a> to close the shelter or transfer ownership to an NGO who actually wants to help dogs.
+      </p>
+    </div>
+
+    <!-- Added a gallery with photos that are on the page -->
+    <h2>The Dogs on the map</h2>
+    <div class="dog-gallery">
+      <!-- Check if there are any dogs in the array -->
+      <% if (AllDogs && AllDogs.length > 0) { %>
+        <% AllDogs.forEach(dog => { %>
+          <!-- go throught dog.imgSrc in the objects array -->
+          <% if (dog.imgSrc) { %>
+            <div class="dog-photo-card">
+              <!-- display the image -->
+              <img src="<%= dog.imgSrc %>"%>">
+            </div>
+          <% } %>
+        <% }) %>
+      <% } else { %>
+        <p>No dogs added yet — be the first to help!</p>
+      <% } %>
+    </div>
+  </div>
+
+
+</body>
+</html>

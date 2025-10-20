@@ -1,0 +1,326 @@
+html{ 
+    height: 100vh;
+    background-color: #1e293b;
+}
+
+/* The agreement page */
+#title{
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    margin: .25rem;
+    color: #f2f2f2;
+}
+
+#agreement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.agreement-box {
+  background-color: #0b1220cc;
+  border: 2px solid #555;
+  border-radius: 10px;
+  padding: 30px;
+  width: 60%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  color: #f2f2f2;
+}
+
+.agreement-box h2 {
+  margin-top: 0;
+  font-size: 26px;
+}
+
+.agreement-box p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+#intro{
+    color: #9aa4b2;
+}
+
+.pledge{
+    padding-left: 1.2rem;
+}
+
+.pledge li{
+  line-height:1.5;
+}
+
+/* checkbox */
+.confirm{
+  display:flex;
+  align-items:flex-start;
+  margin-bottom: 1.2rem;
+}
+
+/* button style when button is enabled */
+#agree_btn {
+  background-color: #f59e0b;
+  color: black;
+  font-size: 18px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+/* add the style for when the button is disabled */
+#agree_btn.disabled {
+  color: black;
+  opacity: 0.7;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* when someone hovers */
+#agree_btn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+/* Map page */
+/* Use map id as instructed from the leaflet website */
+#map {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+/* Overlay panel */
+.add_dog{
+  position: fixed;         
+  top: 30px;
+  left: 50px;
+  z-index: 10000;          
+  background: #1e293b;
+  width: 300px; 
+  height:600px;           
+  padding: 12px 14px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.18);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  color: #f2f2f2;
+}
+
+/* Add dog panel styling */
+.add_dog h1{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.add_dog h5{
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.add_dog form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Radio buttons */
+.add_dog .friendliness{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Checkboxes */
+.needs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin-bottom: 10px;
+}
+
+.needs label {
+  font-size: 14px;
+  color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.add_dog input{
+  padding: 8px 10px;
+}
+
+.add_dog #comment{
+  width: 100%;
+  font-size: 16px;
+  height: 100px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+/* Chnage hte styiling of the upload file button */
+input::file-selector-button {
+  color: #f59e0b;
+  padding: 0.5em;
+  border-radius: 3px;
+  height: 200px;
+  width: 102%;
+  gap: 20px;
+}
+
+/* This is the submit button that sends the data to the server */
+.add_dog #add_button{
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-top: auto;
+  background-color: #f59e0b;
+}
+
+/* View dog panel */
+.view_dog{
+  position: fixed;         
+  top: 30px;
+  right: 50px;
+  z-index: 10000;          
+  background: #1e293b;
+  width: 300px; 
+  height:600px;           
+  padding: 12px 14px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.18);
+  display: none;
+  flex-direction: column;
+  color: #f2f2f2;
+  overflow-y: auto;
+}
+
+.dog-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.dog-card h1{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.dog-photo {
+  padding: 0.5em;
+  border-radius: 3px;
+  height: 200px;
+  width: 100%;
+  gap: 20px;
+  object-fit: contain;
+  max-height: 30%;
+}
+
+.text{
+  display: flex;
+  align-items: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  flex-direction: column;
+  font-size: 20px;
+  max-width: 100%;
+  /* add a wrap so the text goes down when its too long */
+  overflow-wrap: anywhere; 
+}
+
+/* Website navigation menu styling */
+.site_nav{
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background-color: #f59e0b;
+  border: rgba(255,255,255,0.12);
+  padding: 8px 12px;
+  border-radius: 999px;
+  display: flex;
+  gap: 6px;
+}
+
+.site_nav .nav-link{
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 999px;
+}
+
+.site_nav .nav-link.is-active{ 
+  background:#f59e0b; 
+  color: #1e293b; 
+}
+
+/* Styling the about us section */
+#about_us, body{
+  color: #f2f2f2;
+  margin-top: 50px;
+}
+
+/* The doggo */
+#svrcko{
+  width: 200px;
+  height: 250px;
+}
+
+/* Common attributes for the paragraphs in the about us tab */
+.common_attributes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#par_1 {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+#par_2{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+}
+
+/* The photo gallery style at the end of the about us page */
+.dog-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.dog-photo-card {
+  background: #f9fafb;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+/* Bring the dog card a bit up when hovered over */
+.dog-photo-card:hover {
+  transform: translateY(-3px);
+}
+
+.dog-photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

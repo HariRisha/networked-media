@@ -1,0 +1,15 @@
+<nav class="site_nav">
+  <!-- Redirect to map and take the data from the server to see if it is active and so it can be styled in css -->
+  <a
+    href="/map"
+    class="nav-link <% if (active === 'map') { %> is-active <% } %>"
+    >Map</a
+  >
+
+  <!-- Same but for about us page -->
+  <a
+    href="/about"
+    class="nav-link <% if (active === 'about'){ %> is-active <% } %>"
+    >About</a
+  >
+</nav>

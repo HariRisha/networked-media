@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <title>StreetPaws</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js"></script>
+  </head>
+
+  <body>
+    <!-- Just the title outside the box -->
+    <div id="title">
+      <h1>StreetPaws</h1>
+    </div>
+
+    <!-- The inside box with the text and the pledge -->
+    <div id="agreement">
+      <div class="agreement-box">
+        <h2>Community Agreement</h2>
+        <p id="intro">
+          By using StreetPaws, I promise to use this website only to help and
+          protect dogs.
+        </p>
+
+        <!-- Make them go in bullet points -->
+        <ul class="pledge">
+          <li>Report stray dogs honestly and accurately.</li>
+          <li>Never use the map to harm, chase, or frighten animals.</li>
+          <li>Respect the safety of both people and dogs.</li>
+          <li>Avoid sharing personal information or false reports.</li>
+          <li>Treat every dog with kindness, compassion, and care.</li>
+        </ul>
+
+        <!-- Checkgbox -->
+        <label class="confirm">
+          <input type="checkbox" id="agreeCheck" />
+          <span>I promise to use this website responsibly and with compassion.</span>
+        </label>
+        
+        <!-- The confirm button redirects to the map -->
+        <form action="/map" method="get">
+        <button id="agree_btn" class="disabled">Enter the map</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+

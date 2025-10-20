@@ -1,0 +1,43 @@
+<div class="add_dog" id="add_dog">
+  <h1>Add dog</h1>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <!-- image -->
+    <input type="file" name="theImage" class="file-input" accept="image/*">
+
+    <!-- Adding the input types, value is basically what server will receive -->
+    <h5>How friendly is the dog (1 - doesn't like company, 5 - loves pets)</h5>
+    <div class="friendliness">
+      <input type="radio" id="fren_1" name="friendliness" value="Not friendly">
+      <label for="1">1</label><br>
+      <input type="radio" id="fren_2" name="friendliness" value="Not very friendly">
+      <label for="2">2</label><br>
+      <input type="radio" id="fren_3" name="friendliness" value="Neutral">
+      <label for="3">3</label>
+      <input type="radio" id="fren_4" name="friendliness" value="Moderatley friendly">
+      <label for="4">4</label>
+      <input type="radio" id="fren_5" name="friendliness" value="Very friendly">
+      <label for="5">5</label>
+    </div>
+
+    <!-- Needs checkboxes -->
+     <h5>What does the dog need?</h5>
+    <div class="needs">
+      <input type="checkbox" name="needs" id="needs" value="true">
+      <label for="needs">Water</label>
+
+      <input type="checkbox" name="needs2" id="needs2" value="true">
+      <label for="needs2">Food</label>
+
+      <input type="checkbox" name="needs3" id="needs3" value="true">
+      <label for="needs3">Medical care</label>
+    </div>
+
+    <!-- Take comment + hidden coordinates that I will use to place the markers -->
+    <input type="text" name="dog_name" placeholder="Leave a comment" id="comment" required>
+    <input type="hidden" name="lat" id="dog-lat">
+    <input type="hidden" name="lng" id="dog-lng">
+
+    <!-- Submit button -->
+    <input type="submit" value="Post" id="add_button">
+  </form>
+</div>
