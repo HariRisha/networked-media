@@ -1,0 +1,10 @@
+{"date":"11/11/2025","text":"Čovjek se rodi umoran i živi da bi odmar'o","timestamp":1762905593086,"_id":"ZnepEH0Biu2DLQ30"}
+{"date":"11/12/2025","text":"Ljubi krevet svoj ka' sebe samoga ","timestamp":1762905611484,"_id":"9tetKXyRyDSPOFTj"}
+{"date":"11/12/2025","text":"Odmaraj se danju, da noću možeš spavat","timestamp":1762905657315,"_id":"FCLIObgZwOj7IbDv"}
+{"date":"11/12/2025","text":"Ne radi - rad ubija","timestamp":1762905671109,"_id":"LA89UGjf3mkoafcM"}
+{"date":"11/12/2025","text":"Ako vidiš nekog' đe se odmara - pomozi mu","timestamp":1762905701002,"_id":"UygD8YD5gihvQdcu"}
+{"date":"11/12/2025","text":"Radi manje no što možeš, a ono što možeš prebači na drugoga","timestamp":1762913536209,"_id":"0nW3GuZ3WYVOY0pR"}
+{"date":"11/12/2025","text":"U 'ladu je spas - od odmaranja još niko nije crka'","timestamp":1762913600941,"_id":"P5EUJeWNmqRrBWTz"}
+{"date":"11/12/2025","text":"Rad donosi bolest - ne umri mlad","timestamp":1762913633760,"_id":"Kfaz3OwT4TAAhJJS"}
+{"date":"11/12/2025","text":"Kad slučajno želiš radit', sjedi, pričekaj, viđećeš, proći će te","timestamp":1762913700910,"_id":"WuYGvFgbz1qsHwl2"}
+{"date":"11/12/2025","text":"Kad vidiš đe jedu i piju - primakni se, kad vidiš da rade - izmakni se da ne smetaš","timestamp":1762913739693,"_id":"m91tgCPBLGFSpRgX"}
