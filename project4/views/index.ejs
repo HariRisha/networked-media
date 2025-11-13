@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- title -->
+    <h1>Add text to database</h1>
+
+    <!-- the from that sends data to the server -->
+    <form action="/post" method="post" enctype="multipart/form-data">
+        <textarea name="text" placeholder="insert text"></textarea>        
+        <input type="submit" value="add data to database">
+    </form>
+    
+    <!-- display the data received from the database -->
+    <div class="posts">
+        <% for(let message of messages){ %>
+            <span> <%= message.date %> </span>
+            <p> <%= message.text %> </p>
+        <% } %>
+    </div>
+
+</body>
+</html>
